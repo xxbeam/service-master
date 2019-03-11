@@ -1,4 +1,5 @@
 import { Dialog } from 'vant';
+import localStorageUtil from '../js/localSotrageUtil.js'
 
 
 function praseDataError(err){
@@ -10,6 +11,13 @@ function praseDataError(err){
     console.log(err);
 }
 
+function clearLogin(){
+    localStorageUtil.removeItem("token");
+    localStorageUtil.removeItem("userId");
+    localStorageUtil.removeItem("nickname");
+}
+
 export default{
-    praseDataError
+    praseDataError,
+    clearLogin
 }

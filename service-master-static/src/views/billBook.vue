@@ -105,6 +105,7 @@ export default {
                           this.$router.push({name:'user-center'}); 
                       });
                   }else if(data.retcode==3){
+                      common.clearLogin();
                       this.$router.push({name:'login'});
                   }else{
                       this.$dialog.alert({

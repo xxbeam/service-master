@@ -112,6 +112,9 @@
 		<profile>
 			<!-- 生产环境 -->
 			<id>prod</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
 			<properties>
 				<profiles.active>prod</profiles.active>
 			</properties>
@@ -119,9 +122,6 @@
 		<profile>
 			<!-- 本地开发环境 -->
 			<id>local</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
 			<properties>
 				<profiles.active>local</profiles.active>
 			</properties>

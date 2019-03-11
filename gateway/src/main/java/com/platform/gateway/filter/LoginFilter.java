@@ -42,6 +42,7 @@ public class LoginFilter extends ZuulFilter {
     public Object run() throws ZuulException {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
+        ctx.getResponse().setContentType("application/json;charset=UTF-8");
 
         //获取访问白名单'
         AccessAuthDTO authDTO = new AccessAuthDTO();

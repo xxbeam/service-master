@@ -31,6 +31,7 @@
 <script>
     import {getBillBookType} from '../js/api.js'
     import localStorageUtil from '../js/localSotrageUtil.js'
+    import common from '../js/common.js'
     export default {
         data () {
             return {
@@ -56,6 +57,7 @@
                     //请求成功，添加标签
                     this.billBookTypes = data.retdata;
                 }else if(data.retcode==3){
+                    common.clearLogin();
                     this.$router.push({name:'login'});
                 }else{
                     this.$dialog.alert({
