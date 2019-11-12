@@ -20,7 +20,7 @@
                 <version>0.8.1</version>
                 <configuration>
                     <skip>false</skip>
-                    <destFile>/target/jacoco.exec</destFile>
+                    <destFile>target/jacoco.exec</destFile>
                 </configuration>
                 <executions>
                     <execution>
@@ -31,8 +31,8 @@
                     </execution>
                     <execution>
                         <configuration>
-                            <dataFile>/target/jacoco.exec</dataFile>
-                            <outputDirectory>/target</outputDirectory>
+                            <dataFile>target/jacoco.exec</dataFile>
+                            <outputDirectory>target</outputDirectory>
                         </configuration>
                         <id>report</id>
                         <phase>test</phase>
