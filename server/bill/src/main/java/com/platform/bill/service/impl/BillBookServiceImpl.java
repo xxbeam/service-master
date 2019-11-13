@@ -61,6 +61,7 @@ public class BillBookServiceImpl implements BillBookService {
     public List<BillBookTypeVo> getBillBookTypeByUser(Integer userId) {
         List<BillBookType> billBookTypeList = this.selectBillBookTypeByNameAndUser(null,userId);
         List<BillBookTypeVo> voList = BeanCopyUtils.copyList(billBookTypeList,BillBookTypeVo.class);
+        System.out.println(111111111);
         return voList;
     }
 
