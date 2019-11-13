@@ -26,12 +26,13 @@ public class UserServiceTests {
 
     @Test
     public void getUserById(){
+        UserVo vo = null;
         try {
-            UserVo vo = userService.getUserById(1);
+            vo = userService.getUserById(1);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Assert.assertTrue(true);
+        Assert.assertNotNull(vo);
     }
 
     @Test
@@ -39,12 +40,13 @@ public class UserServiceTests {
         UserDTO userDTO = new UserDTO();
         userDTO.setLoginName("xxBeam");
         userDTO.setPassword("123456");
+        UserVo userVo = null;
         try {
-            userService.login(userDTO);
+            userVo = userService.login(userDTO);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Assert.assertTrue(true);
+        Assert.assertNotNull(userVo);
     }
 
 }
