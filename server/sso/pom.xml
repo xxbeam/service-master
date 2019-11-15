@@ -38,8 +38,8 @@
 					<skip>false</skip>
 					<destFile>target/jacoco.exec</destFile>
 					<excludes>
-						<exclude>com/**/**/bo/*</exclude>
-						<exclude>com/**/**/config/*</exclude>
+						<exclude>com/platform/sso/bo/*</exclude>
+						<exclude>com/platform/sso/config/*</exclude>
 					</excludes>
 				</configuration>
 				<executions>
