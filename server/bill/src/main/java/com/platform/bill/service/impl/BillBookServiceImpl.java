@@ -70,7 +70,7 @@ public class BillBookServiceImpl implements BillBookService {
      * @param userId
      * @return
      */
-    private List<BillBookType> selectBillBookTypeByNameAndUser(String typeName, Integer userId){
+    public List<BillBookType> selectBillBookTypeByNameAndUser(String typeName, Integer userId){
         BillBookTypeExample billBookTypeExample = new BillBookTypeExample();
         BillBookTypeExample.Criteria criteria = billBookTypeExample.createCriteria();
 
