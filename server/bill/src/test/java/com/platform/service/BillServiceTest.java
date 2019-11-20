@@ -17,13 +17,16 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 /**
@@ -35,26 +38,29 @@ import static org.mockito.Mockito.when;
 @Rollback(false)
 public class BillServiceTest  extends TestCase {
 
-    @InjectMocks
-    BillController billController;
 
     @Mock
-    private BillBookService billBookService;
+    private BillBookTypeMapper billBookTypeMapper;;
+
+    @Autowired
+    BillBookService billBookService;
 
     @Test
     public void getBillBookTypeByUser() {
-        when(billBookService.getBillBookTypeByUser(1)).thenReturn(selectBillBookTypeByNameAndUser(new BillBookTypeExample()));
-        JsonResult jsonResult = billController.getBillBookType(1);
-        System.out.println(JSON.toJSONString(jsonResult));
-        Assert.assertTrue(jsonResult!=null);
+        //通过ReflectionTestUtils注入需要的非public字段数据
+        ReflectionTestUtils.setField(billBookService, "billBookTypeMapper", billBookTypeMapper);
+        when(billBookTypeMapper.selectByExample(any())).thenReturn(selectBillBookTypeByNameAndUser());
+        List<BillBookTypeVo> list = billBookService.getBillBookTypeByUser(1);
+        System.out.println(JSON.toJSONString(list));
+        Assert.assertTrue(list!=null);
 
     }
 
-    private List<BillBookTypeVo> selectBillBookTypeByNameAndUser(BillBookTypeExample billBookTypeExample){
-        BillBookTypeVo billBookType = new BillBookTypeVo();
+    private List<BillBookType> selectBillBookTypeByNameAndUser(){
+        BillBookType billBookType = new BillBookType();
         billBookType.setId(1);
         billBookType.setTypeName("111");
-        List<BillBookTypeVo> list = new ArrayList<>();
+        List<BillBookType> list = new ArrayList<>();
         list.add(billBookType);
         return list;
     }
