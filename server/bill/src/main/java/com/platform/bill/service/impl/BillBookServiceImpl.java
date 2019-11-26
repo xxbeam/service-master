@@ -100,6 +100,22 @@ public class BillBookServiceImpl implements BillBookService {
             System.out.println(22222222);
             System.out.println(22222222);
             System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
+            System.out.println(22222222);
         }
         List<BillBookType> billBookTypeList = this.selectBillBookTypeByNameAndUser(null,userId);
         List<BillBookTypeVo> voList = BeanCopyUtils.copyList(billBookTypeList,BillBookTypeVo.class);
