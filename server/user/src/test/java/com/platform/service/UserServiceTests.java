@@ -43,9 +43,9 @@ public class UserServiceTests {
         UserVo userVo = null;
         try {
             userVo = userService.login(userDTO);
-            userService.login(null);
+            userVo = userService.login(null);
             userDTO.setPassword("111111");
-            userService.login(userDTO);
+            userVo = userService.login(userDTO);
         } catch (Exception e) {
             e.printStackTrace();
         }
