@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
             System.out.println(222);
             System.out.println(222);
         }
-        if(userId==2){
+        if(userId==1){
             System.out.println(333);
             System.out.println(333);
             System.out.println(333);
@@ -99,6 +99,44 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void newtest() {
+        if(true){
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+            System.out.println(1);
+        }
         User user = new  User();
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
