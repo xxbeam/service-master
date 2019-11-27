@@ -112,8 +112,8 @@
 					<skip>false</skip>
 					<destFile>target/jacoco.exec</destFile>
 					<excludes>
-						<exclude>com/platform/user/bo/*</exclude>
-						<exclude>com/platform/user/config/*</exclude>
+						<exclude>com/platform/**/bo/*</exclude>
+						<exclude>com/platform/**/config/*</exclude>
 					</excludes>
 				</configuration>
 				<executions>
