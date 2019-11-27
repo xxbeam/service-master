@@ -33,6 +33,11 @@ public class UserServiceTests {
             e.printStackTrace();
         }
         Assert.assertNotNull(vo);
+        try {
+            vo = userService.getUserById(10);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
