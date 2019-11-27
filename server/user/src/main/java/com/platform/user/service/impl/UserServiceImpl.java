@@ -31,6 +31,50 @@ public class UserServiceImpl implements UserService {
             System.out.println(111);
             System.out.println(111);
         }
+        if(userId ==1){
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+            System.out.println(222);
+        }
+        if(userId==2){
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+        }
+        if(userId==10){
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+            System.out.println(4444);
+        }
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
         userVo = UserVoConvert.convert(userVo);
