@@ -97,11 +97,11 @@ public class UserServiceImpl implements UserService {
         return userVo;
     }
 
-//    @Override
-//    public void newtest() {
-//        User user = new  User();
-//        UserVo userVo = new UserVo();
-//        CopyBeans.copy(userVo, user);
-//        userVo = UserVoConvert.convert(userVo);
-//    }
+    @Override
+    public void newtest() {
+        User user = new  User();
+        UserVo userVo = new UserVo();
+        CopyBeans.copy(userVo, user);
+        userVo = UserVoConvert.convert(userVo);
+    }
 }
