@@ -37,19 +37,34 @@ public class UserServiceTests {
 
     @Test
     public void login(){
-        UserDTO userDTO = new UserDTO();
-        userDTO.setLoginName("xxBeam");
-        userDTO.setPassword("123456");
         UserVo userVo = null;
         try {
+            UserDTO userDTO = new UserDTO();
+            userDTO.setLoginName("xxBeam");
+            userDTO.setPassword("123456");
             userVo = userService.login(userDTO);
-            userVo = userService.login(null);
-            userDTO.setPassword("111111");
+            Assert.assertNotNull(userVo);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            userVo = null;
+            UserDTO userDTO = new UserDTO();
+            userDTO.setLoginName("xxBeam22");
+            userDTO.setPassword("123456");
             userVo = userService.login(userDTO);
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        Assert.assertNotNull(userVo);
+        try {
+            userVo = null;
+            UserDTO userDTO = new UserDTO();
+            userDTO.setLoginName("xxBeam");
+            userDTO.setPassword("1234563333");
+            userVo = userService.login(userDTO);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
