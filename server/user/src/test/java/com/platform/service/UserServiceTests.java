@@ -38,11 +38,11 @@ public class UserServiceTests {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        try {
-            vo = userService.getUserById(12);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            vo = userService.getUserById(12);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
     @Test

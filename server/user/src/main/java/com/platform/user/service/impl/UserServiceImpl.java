@@ -21,10 +21,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserVo getUserById(Integer userId) throws Exception{
-        User user = userDao.getById(userId);
-        if(user==null){
-            throw new ResponseExpection("用户不存在");
-        }
         if(userId==12){
             System.out.println(111);
             System.out.println(111);
@@ -112,6 +108,10 @@ public class UserServiceImpl implements UserService {
             System.out.println(1);
             System.out.println(1);
             System.out.println(1);
+        }
+        User user = userDao.getById(userId);
+        if(user==null){
+            throw new ResponseExpection("用户不存在");
         }
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
