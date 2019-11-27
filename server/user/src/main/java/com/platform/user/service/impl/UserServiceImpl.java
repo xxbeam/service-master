@@ -142,4 +142,37 @@ public class UserServiceImpl implements UserService {
         CopyBeans.copy(userVo, user);
         userVo = UserVoConvert.convert(userVo);
     }
+
+    @Override
+    public void newtest2() {
+        User user = new  User();
+        UserVo userVo = new UserVo();
+        CopyBeans.copy(userVo, user);
+        userVo = UserVoConvert.convert(userVo);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+    }
 }

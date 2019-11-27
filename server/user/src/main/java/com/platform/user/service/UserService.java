@@ -13,4 +13,6 @@ public interface UserService {
 
     public void newtest();
 
+    public void newtest2();
+
 }
