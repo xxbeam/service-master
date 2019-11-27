@@ -46,4 +46,12 @@ public class UserServiceImpl implements UserService {
         userVo = UserVoConvert.convert(userVo);
         return userVo;
     }
+
+    @Override
+    public void newtest() {
+        User user = new  User();
+        UserVo userVo = new UserVo();
+        CopyBeans.copy(userVo, user);
+        userVo = UserVoConvert.convert(userVo);
+    }
 }

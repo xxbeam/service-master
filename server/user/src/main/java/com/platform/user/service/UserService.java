@@ -11,4 +11,6 @@ public interface UserService {
 
     public UserVo login(UserDTO userDTO) throws Exception;
 
+    public void newtest();
+
 }
