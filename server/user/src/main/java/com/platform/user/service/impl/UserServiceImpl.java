@@ -75,30 +75,6 @@ public class UserServiceImpl implements UserService {
             System.out.println(4444);
             System.out.println(4444);
         }
-        UserVo userVo = new UserVo();
-        CopyBeans.copy(userVo, user);
-        userVo = UserVoConvert.convert(userVo);
-        return userVo;
-    }
-
-    @Override
-    public UserVo login(UserDTO userDTO) throws Exception {
-        User user = userDao.getByLoginName(userDTO.getLoginName());
-        if(user==null){
-            throw new ResponseExpection("用户名不存在");
-        }
-        String signPwd = MD5Security.encrypt(userDTO.getPassword());
-        if(!user.getPassword().equals(signPwd)){
-            throw new ResponseExpection("用户密码不正确");
-        }
-        UserVo userVo = new UserVo();
-        CopyBeans.copy(userVo, user);
-        userVo = UserVoConvert.convert(userVo);
-        return userVo;
-    }
-
-    @Override
-    public void newtest() {
         if(true){
             System.out.println(1);
             System.out.println(1);
@@ -137,6 +113,30 @@ public class UserServiceImpl implements UserService {
             System.out.println(1);
             System.out.println(1);
         }
+        UserVo userVo = new UserVo();
+        CopyBeans.copy(userVo, user);
+        userVo = UserVoConvert.convert(userVo);
+        return userVo;
+    }
+
+    @Override
+    public UserVo login(UserDTO userDTO) throws Exception {
+        User user = userDao.getByLoginName(userDTO.getLoginName());
+        if(user==null){
+            throw new ResponseExpection("用户名不存在");
+        }
+        String signPwd = MD5Security.encrypt(userDTO.getPassword());
+        if(!user.getPassword().equals(signPwd)){
+            throw new ResponseExpection("用户密码不正确");
+        }
+        UserVo userVo = new UserVo();
+        CopyBeans.copy(userVo, user);
+        userVo = UserVoConvert.convert(userVo);
+        return userVo;
+    }
+
+    @Override
+    public void newtest() {
         User user = new  User();
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
