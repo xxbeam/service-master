@@ -25,123 +25,123 @@ public class UserServiceImpl implements UserService {
         if(user==null){
             throw new ResponseExpection("用户不存在");
         }
-        if(userId==12){
-            System.out.println(111);
-            System.out.println(111);
-            System.out.println(111);
-            System.out.println(111);
-        }
-        if(userId ==1){
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-            System.out.println(222);
-        }
-        if(userId==1){
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-            System.out.println(333);
-        }
-        if(userId==10){
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-            System.out.println(4444);
-        }
-        if(true){
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-            System.out.println(1);
-        }
-        if(false){
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-            System.out.println();
-        }
+//        if(userId==12){
+//            System.out.println(111);
+//            System.out.println(111);
+//            System.out.println(111);
+//            System.out.println(111);
+//        }
+//        if(userId ==1){
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//            System.out.println(222);
+//        }
+//        if(userId==1){
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//            System.out.println(333);
+//        }
+//        if(userId==10){
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//            System.out.println(4444);
+//        }
+//        if(true){
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//            System.out.println(1);
+//        }
+//        if(false){
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//            System.out.println();
+//        }
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
         userVo = UserVoConvert.convert(userVo);
@@ -164,44 +164,44 @@ public class UserServiceImpl implements UserService {
         return userVo;
     }
 
-    @Override
-    public void newtest() {
-        User user = new  User();
-        UserVo userVo = new UserVo();
-        CopyBeans.copy(userVo, user);
-        userVo = UserVoConvert.convert(userVo);
-    }
-
-    @Override
-    public void newtest2() {
-        User user = new  User();
-        UserVo userVo = new UserVo();
-        CopyBeans.copy(userVo, user);
-        userVo = UserVoConvert.convert(userVo);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-        System.out.println(111);
-    }
+//    @Override
+//    public void newtest() {
+//        User user = new  User();
+//        UserVo userVo = new UserVo();
+//        CopyBeans.copy(userVo, user);
+//        userVo = UserVoConvert.convert(userVo);
+//    }
+//
+//    @Override
+//    public void newtest2() {
+//        User user = new  User();
+//        UserVo userVo = new UserVo();
+//        CopyBeans.copy(userVo, user);
+//        userVo = UserVoConvert.convert(userVo);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//        System.out.println(111);
+//    }
 }
