@@ -25,6 +25,13 @@ public class UserServiceImpl implements UserService {
         if(user==null){
             throw new ResponseExpection("用户不存在");
         }
+        if(userId==102){
+            System.out.println(111);
+            System.out.println(111);
+            System.out.println(111);
+            System.out.println(111);
+            System.out.println(111);
+        }
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
         userVo = UserVoConvert.convert(userVo);
