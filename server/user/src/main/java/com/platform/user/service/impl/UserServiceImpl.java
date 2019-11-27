@@ -113,6 +113,35 @@ public class UserServiceImpl implements UserService {
             System.out.println(1);
             System.out.println(1);
         }
+        if(false){
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+            System.out.println();
+        }
         UserVo userVo = new UserVo();
         CopyBeans.copy(userVo, user);
         userVo = UserVoConvert.convert(userVo);
