@@ -41,20 +41,20 @@ public class UserServiceImpl implements UserService {
 //            System.out.println(222);
 //            System.out.println(222);
 //        }
-//        if(userId==1){
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//            System.out.println(333);
-//        }
+        if(userId==1){
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+            System.out.println(333);
+        }
 //        if(userId==10){
 //            System.out.println(4444);
 //            System.out.println(4444);
@@ -143,36 +143,36 @@ public class UserServiceImpl implements UserService {
 //        userVo = UserVoConvert.convert(userVo);
 //    }
 //
-//    @Override
-//    public void newtest2() {
-//        User user = new  User();
-//        UserVo userVo = new UserVo();
-//        CopyBeans.copy(userVo, user);
-//        userVo = UserVoConvert.convert(userVo);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//        System.out.println(111);
-//    }
+    @Override
+    public void newtest2() {
+        User user = new  User();
+        UserVo userVo = new UserVo();
+        CopyBeans.copy(userVo, user);
+        userVo = UserVoConvert.convert(userVo);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+        System.out.println(111);
+    }
 }
